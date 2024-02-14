@@ -1,0 +1,283 @@
+/*colors*/
+$textes : #363636;
+$violet_fonce : #7e4a7c;
+$violet_moyen : #b878b5;
+$violet_font_clair :#ffeefe;
+$textes_btn : white;
+$size :  1200px;
+
+/*full page settings*/
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin:0;
+    padding:0;
+
+    /* specs for hero */
+.hero{
+  width: 100vw;
+    height: 40vh;
+    margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+border-top:2px solid $violet_fonce;
+}
+
+/* font family from fontawsome */
+nav{
+    font-family: economica;
+}
+
+/* includes hover changes */
+header{
+    display: flex;
+    justify-content: center;
+   align-self: center;
+   align-items: center;
+   height: 8vh;
+   width: $size;
+   background-color:$violet_fonce ;
+ ul{
+   padding: 0;
+    width: $size;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   align-self: center;
+    li{
+        display: flex;
+        list-style: none;
+        a{
+            
+          text-decoration: none;
+            color: $textes_btn;
+        }
+        /*changes for hover on menu*/
+        a:hover {
+            color: $violet_fonce;
+            background-color: $violet_font_clair;
+          }
+    }
+ }
+
+}
+
+/* main comprised of several sections ....note (note...width is 1200px) */
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: $size;
+    #titre{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+width: $size;
+    }
+    #about{
+        display: flex;
+        .about_text{
+            width: 25vw;
+            height: 10vh;
+            margin-left: 1rem;
+        }
+    
+        .why_us_list > li{
+            list-style: none;
+          margin: 2rem;
+          .puce_fleche {
+            color: $violet_moyen;
+            margin-right: 1rem;
+          }
+        }
+    }
+    #our_teachers{
+        display: flex;
+        margin-top: 1.5rem;
+        .our_teachers_bloc{
+            display: flex;
+            flex-direction: row;
+        }
+        .our_teachers_text{
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+    }
+
+    #our_classes{
+        display: flex;
+        justify-content: center;
+        height: 40vh;
+        table{
+            width: 1000px;
+            background-color: $violet_font_clair;
+            #top{
+             background-color: $violet_fonce;
+             color: $textes_btn;
+            }
+             td{
+                background-color: white;
+                padding: 10px;
+             }
+             }
+             #color_box{
+                background-color: $violet_font_clair;
+             }
+    }
+   
+/*form donloaded and then modified to spec*/
+    #form{
+        height: 32vh;
+        border: 1px solid $violet_moyen;
+        margin-bottom: 5vh;
+        input{
+            border: 1px solid $violet_moyen;
+            margin-left: .5rem;
+        }
+     
+        .form_top{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 1rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            height: 9vh;
+            background-color: $violet_font_clair;
+            #name{
+                width: 20vw;
+
+            }
+            #email{
+                width: 20vw;
+            }
+        }
+        .form_bottom{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 1rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            height: 9vh;
+            background-color: $violet_font_clair;
+            #teacher{
+                width: 15vw;
+
+            }
+            #day{
+                width: 15vw;
+            }
+            #session{
+                width: 15vw;
+            }
+            #form_bottom{
+                margin-top: .5rem;
+            }
+        }
+        #btn_validation{
+            display: flex;
+            justify-content: center;
+        }
+      
+    }
+       
+    }
+  /* icons in this section are not to spec (could not find)*/
+.pre-footer{
+    height: 8vh;
+    width: 100%;
+    background-color: $violet_fonce;
+    display: flex;
+    justify-content:center;
+.pre-footer_icons{
+width: 15vw;
+display: flex;
+justify-content: space-between;
+align-items: center;
+.fa-brands{
+font-size: x-large;
+color: $violet_font_clair;
+}
+}
+}
+
+/* dito with the icon (cant find the same on google*/
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    width: 100%;
+    background-color: $textes;
+    
+    #copyright{
+       color: white;
+    }
+} 
+  
+}
+
+
+/*font sizes colors and specs*/
+#titre{
+    width: $size;
+}
+
+.titre{
+    color: $violet_fonce;
+    font-size: 50px;
+    font-family: economica;
+}
+
+.titres_rubriques{
+    color: $violet_moyen;
+    font-size:40px;
+}
+
+.titres_sous_rubriques{
+    color: $violet_moyen;
+    font-size: 30px;
+    margin-top: 0;
+}
+.sous_rubrique_texte{
+    font-style: italic;
+    color: $violet_fonce;
+}
+.lable_texte{
+    color: $violet_fonce;
+}
+
+.menu{
+font-size: 24px;
+}
+
+.btn_more{
+    height: 4rem;
+    width: 6rem;
+    background-color: $violet_fonce;
+    font-size: 20px;
+    color: $textes_btn;
+    cursor:grab;
+    font-family: economica;
+}
+.btn_validation{
+ height: 6vh;
+ width: 12vw;
+    background-color: $violet_fonce;
+    color: $textes_btn;
+ font-size: 25px;
+ cursor:grab;
+ font-family: economica;
+}
+.copyright{
+    font-size: 14px;
+}
+.police_style{
+    font-family: open Sans;
+}
